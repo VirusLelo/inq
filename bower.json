@@ -1,0 +1,20 @@
+{
+  "name": "vvs",
+  "version": "0.0.0",
+  "authors": [
+    "vikasbansal1234 <vikas.bansal@intelligrape.com>"
+  ],
+  "keywords": [
+    "Hunting"
+  ],
+  "license": "MIT",
+  "homepage": "js",
+  "private": true,
+  "dependencies": {
+    "angular": ">=1 <1.3.0",
+    "angular-ui-router": "~0.2.13",
+    "angular-ui-bootstrap-bower": "~0.12.0",
+    "bootstrap": "~3.3.2"
+  },
+   "appPath": "public/"
+}

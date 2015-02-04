@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="inquiry">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="js/common/bootstrap/dist/css/bootstrap.css"/>
+    <style>
+
+        .carousel-control.left,.carousel-control.right {
+            display:none;
+        }
+        @font-face {
+            font-family: Roboto;
+            src: url('fonts/Roboto-Light.ttf');
+        }
+
+        @font-face {
+            font-family: Tangerine;
+            src: url('fonts/Tangerine_Regular.ttf');
+        }
+       body {
+            font-family: 'Roboto', cursive;
+
+
+        }
+
+
+    </style>
+</head>
+<body ng-controller="MainCtrl">
+<div class="container-fluid">
+ <div ng-include="'templates/header.html'"></div>
+ <div ui-view>No view present that time</div>
+ <div ng-include="'templates/footer.html'"></div>
+</div>
+
+
+
+<script src="js/common/jquery/dist/jquery.min.js"></script>
+<script src="js/common/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/common/angular/angular.min.js"></script>
+<script src="js/common/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="js/common/angular-ui-bootstrap-bower/ui-bootstrap.min.js"></script>
+<script src="js/common/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+<script src="js/module/module.js"></script>
+<script src="js/config/config.js"></script>
+<script src="js/controller/maincontroller.js"></script>
+<script src="js/controller/homecontroller.js"></script>
+<script src="js/controller/aboutcontroller.js"></script>
+<script src="js/controller/newscontroller.js"></script>
+<script src="js/controller/contactcontroller.js"></script>
+<script src="js/controller/trilayoutcontroller.js"></script>
+<script src="js/controller/welcomecontroller.js"></script>
+</body>
+</html>
