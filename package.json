@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "express": "3.18.2",
-    "jade": "*"
+    "finalhandler": "^0.3.3",
+    "jade": "*",
+    "ms": "^0.7.0"
   }
 }
