@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="js/common/bootstrap/dist/css/bootstrap.css"/>
+
+    <link re="stylesheet" href="stylesheets/font-awesome.css"/>
     <link rel="stylesheet" href="stylesheets/simple-sidebar.css"/>
     <style>
 
@@ -22,9 +24,25 @@
         }
        body {
             font-family: 'Roboto', cursive;
+            padding-top:25px;
 
 
         }
+        .custom{
+            font-family: 'Roboto', cursive;
+            font-size:12px;
+            font-weight: bold;
+        }
+        .custom1{
+
+            font-family: 'Tangerine', cursive;
+            font-size:40px;
+
+        }
+        .container-fluid{
+            padding:0px;
+        }
+
 
 
     </style>
@@ -33,7 +51,7 @@
 <div class="container-fluid">
  <div ng-include="'templates/header.html'"></div>
  <div ui-view>No view present that time</div>
-<!-- <div ng-include="'templates/footer.html'"></div>-->
+<div ng-include="'templates/footer.html'"></div>
 </div>
 
 
