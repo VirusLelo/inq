@@ -1,4 +1,7 @@
 
 angular.module('inquiry').controller('HomeCtrl',function($scope){
-    console.log('Home controller');
+   setInterval(function(){
+       $scope.currentDate=new Date();
+
+   },1000)
 })
