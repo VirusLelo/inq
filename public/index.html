@@ -24,8 +24,6 @@
         }
        body {
             font-family: 'Roboto', cursive;
-            padding-top:25px;
-
 
         }
         .custom{
@@ -39,8 +37,30 @@
             font-size:40px;
 
         }
-        .container-fluid{
-            padding:0px;
+        .header-text-row {
+            color: white;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
+            font-size: 34px;
+            font-weight: 700;
+            font-family: 'Tangerine', cursive;
+        }
+        .icon-header-text-row {
+            color: white;
+            text-align: center;
+            font-size: 10px;;
+            font-weight: 700;
+            font-family: sans-serif;
+
+        }
+
+        .icon-header-text {
+            color:#cb202d ;
+            text-align: center;
+            font-size: 10px;;
+            font-weight: 700;
+            font-family: sans-serif;
+
         }
 
 
@@ -50,6 +70,7 @@
 <body ng-controller="MainCtrl">
 <div class="container-fluid">
  <div ng-include="'templates/header.html'"></div>
+ <div ng-include="'templates/subheader.html'"></div>
  <div ui-view>No view present that time</div>
 <div ng-include="'templates/footer.html'"></div>
 </div>
