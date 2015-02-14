@@ -1,21 +1,10 @@
-<div class="panel panel-default" style="background-color: rgba(39, 39, 39, 0.7);">
-
-    <div class="panel-body">
-
-        <form>
-            <div class="form-group form-group-sm">
-                <label>Search</label>
-                <input type="text" class="form-control"/>
-            </div>
-            <div class="form-group form-group-sm">
-                <label>Location</label>
-                 <input type="text" class="form-control"/>
-            </div>
-            <div class="form-group form-group-sm">
-                <label>Radius</label>
-                <input type="text" class="form-control"/>
-            </div>
-        </form>
+<div class="row">
+    <div class="col-md-2">
+        <a href="javascript:void(0);" class="thumbnail">
+            <map center="current-location" zoom="6"> <info-window position="current-location" visible="true"> <span>Loation found using HTML5.</span> </info-window> </map>  </a>
+    </div>
+    <div class="col-md-10">
+        {{current-location}}
     </div>
 
 </div>
