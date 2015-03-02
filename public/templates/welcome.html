@@ -1,55 +1,83 @@
 <div class="row">
-    <div class="col-md-9">
-
+    <div class="col-md-2">
         <div class="row">
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+            <div class="col-md-12 text-center">
+                <span>UPCOMING MOVIES</span>
             </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+            <div class="col-md-12 text-center">
+                <a href="#" class="thumbnail"><img src="images/verticalbanner.jpg"/></a>
             </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
-            </div>
-
-        </div>
-
 
     </div>
-    <div class="col-md-3">
+    <div class="col-md-8">
+        <div ng-show="result">
+            <div ng-repeat="res in result.results">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">{{res.name}}</h4>
+                        <p class="list-group-item-text">{{res.formatted_address}}</p>
+                        <p class="list-group-item-text">{{res.rating}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div ng-hide="result">
+            <div class="row text-center">
+                <span>Category of most searched items</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-dodge.jpg"/></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail"><img src="images/tx-flutter.jpg"/></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-md-2">
         <a href="javascript:void(0);" class="thumbnail">
             <map center="current-location" zoom="6"> <info-window position="current-location" visible="true"> <span>Loation found using HTML5.</span> </info-window> </map>  </a>
 

@@ -8,6 +8,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var query=require('./api/queryapi');
 
 var app = express();
 
@@ -30,6 +31,14 @@ if ('development' == app.get('env')) {
 
 app.get('/',function(req,res){
     res.redirect('/index.html');
+});
+
+app.get('/search',function(req,res){
+    query.getSearchBasedOnQuery(req,res);
+});
+
+app.get('/autocomplete',function(req,res){
+    query.autocompleteforlocation(req,res);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

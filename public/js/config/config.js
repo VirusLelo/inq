@@ -30,4 +30,9 @@ angular.module('inquiry').config(function($stateProvider, $urlRouterProvider){
             controller:'WelcomeCtrl',
             templateUrl:'templates/welcome.html'
         })
+        .state("loginregister",{
+            url:'/loginregister',
+            controller:'LoginRegisterCtrl',
+            templateUrl:'templates/loginregister.html'
+        })
 })
