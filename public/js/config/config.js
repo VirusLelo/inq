@@ -35,4 +35,14 @@ angular.module('inquiry').config(function($stateProvider, $urlRouterProvider){
             controller:'LoginRegisterCtrl',
             templateUrl:'templates/loginregister.html'
         })
+        .state("recharge",{
+            url:'/recharge',
+            controller:'RechargeCtrl',
+            templateUrl:'templates/recharge/recharge.html'
+        })
+        .state("bustaxis",{
+            url:'/bustaxis',
+            controller:'BustaxisCtrl',
+            templateUrl:'templates/bustaxis/bustaxis.html'
+        })
 })

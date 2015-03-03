@@ -1,0 +1,42 @@
+<div class="container row">
+    <hr/>
+    <h2> Bus Booking </h2>
+    <div class="col-lg-6" style="padding-top: 10px; ">
+        <div class="input-group" style="padding-top: 10px; ">
+            <input type="text" class="form-control" placeholder="Enter Location">
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="button" width="100px;"> From</button>
+              </span>
+
+        </div>
+        <div class="input-group" style="padding-top: 10px; ">
+            <input type="text" class="form-control" placeholder="Enter Location">
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="button">&nbsp;&nbsp;&nbsp;&nbsp;To&nbsp;&nbsp;&nbsp;</button>
+              </span>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="padding-top: 10px; ">
+                <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+                </p>
+            </div>
+            <div class="col-md-6" style="padding-top: 10px; ">
+                <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="openedd" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+                </p>
+            </div>
+        </div>
+        <div class="input-group" style="padding-top: 10px; ">
+            <button class="btn btn-success" type="button">&nbsp;&nbsp; Click For Bus Booking &nbsp;&nbsp;</button>
+        </div>
+        <!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->

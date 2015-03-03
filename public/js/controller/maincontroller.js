@@ -34,7 +34,7 @@ angular.module('inquiry')
         }
 
         $scope.getAutocompleteSearchKey= function(val){
-            var states=['Movies','Mobile Recharge','Bus Ticket Booking'];
+            var states=['movies','Mobile Recharge','Bus Ticket Booking'];
 //            console.log('Get Result'+val);
 //            var loc='http://localhost:3000/autocomplete?text='+val;
 //            return $http.get(loc).then(function(resp){

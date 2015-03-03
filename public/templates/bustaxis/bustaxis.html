@@ -1,0 +1,10 @@
+<div class="container">
+
+    <div ng-controller="BustaxisCtrl">
+        <tabset justified="true">
+            <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+                <div ng-include='tab.content'></div>
+            </tab>
+        </tabset>
+    </div>
+</div>
