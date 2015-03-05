@@ -47,4 +47,10 @@ angular.module('inquiry')
 //            })
             return states;
         }
+      $scope.collapse={
+            isCollapsed:false
+        }
+
+
+
     });

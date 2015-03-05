@@ -7,4 +7,5 @@ angular.module('inquiry').controller('RechargeCtrl',function($scope){
         { title:"Data Card Recharge", content:"templates/recharge/datacardrecharge.html" },
         { title:"Other Bills", content:"templates/recharge/othersbills.html"}
     ];
+
 })

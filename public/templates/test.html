@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Web Slide Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/demo.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/webslidemenu.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/color-theme.css" />
+    <link rel="stylesheet" href="../stylesheets/font-awesome.min.css" />
+    <script type="text/javascript" language="javascript" src="../js/common/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/common/webslidemenu.js"></script>
+
+    <!--For Demo Only-->
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $(".gry, .blue, .green, .red, .orange, .yellow, .purple, .pink").on("click", function() {
+                $(".wsmenu")
+                        .removeClass()
+                        .addClass('wsmenu pm_' + $(this).attr('class') );
+            });
+
+            $(".blue-grdt, .gry-grdt, .green-grdt, .red-grdt, .orange-grdt, .yellow-grdt, .purple-grdt, .pink-grdt").on("click", function() {
+                $(".wsmenu")
+                        .removeClass()
+                        .addClass('wsmenu pm_' + $(this).attr('class') );
+            });
+        });
+    </script>
+    <!--For Demo Only-->
+
+
+
+
+<script>
+    </script>
+
+    </head>
+    <body>
+    <div class="wsmenucontainer clearfix">
+            <div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft" href="#"><span></span></a></div>
+    <div class="wsmenucontent overlapblackbg"></div>
+
+    <div class="header">
+            <div class="wrapper clearfix">
+            <div class="logo clearfix"><a href="index.html" title="Responsive Slide Menus"><img src="images/logo.png" alt="" /></a></div>
+
+        <!--Menu HTML Code-->
+    <nav class="wsmenu slideLeft clearfix">
+            <ul class="mobile-sub wsmenu-list">
+            <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="#"><i class="fa fa-info-circle"></i> About Us <span class="arrow"></span></a>
+    <ul class="wsmenu-submenu">
+            <li><a href="#"><i class="fa fa-caret-right"></i> Website Design </a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Ecommerce Solutions</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Application Development</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Website Development</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Open Source Development</a>
+    <ul class="wsmenu-submenu-sub">
+            <li><a href="#"><i class="fa fa-caret-right"></i> Submenu item 1</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Submenu item 2</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Submenu item 3</a></li>
+    <li><a href="#"><i class="fa fa-caret-right"></i> Submenu item 4</a>
+    <ul class="wsmenu-submenu-sub-sub">
+            <li class=""><a href="#"><i class="fa fa-caret-right"></i> Submenu item 1 Sub</a></li>
+    <li class=""><a href="#"><i class="fa fa-caret-right"></i> Submenu item 2 Sub</a></li>
+    <li class=""><a href="#"><i class="fa fa-caret-right"></i> Submenu item 3 Sub</a></li>
+    <li class=""><a href="#"><i class="fa fa-caret-right"></i> Submenu item 4 Sub</a></li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li><a href="#"><i class="fa fa-cog"></i> Services <span class="arrow"></span></a>
+    <div class="megamenu clearfix">
+            <ul>
+            <li class="title">Website Design</li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    </ul>
+
+    <ul>
+    <li class="title">Ecommerce Solutions</li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    </ul>
+
+    <ul>
+    <li class="title">Application Development</li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    <li><a href="#">Submenu link style</a></li>
+    </ul>
+
+    <div class="ad-style"><a href="#"><img src="images/add.png" alt="" /></a></div>
+    </div>
+    </li>
+    <li><a href="#"><i class="fa fa-bolt"></i> What's New</a></li>
+    <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+    <li><a href="#"><i class="fa fa-comments-o"></i> Blog</a></li>
+    <li><a href="#"><i class="fa fa-list"></i> Our Article</a></li>
+    <li><a href="#"><i class="fa fa-paper-plane"></i> Contact Us <span class="arrow"></span></a>
+    <div class="megamenu halfdiv">
+            <form name="contact_name" class="menu_form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Your message..."></textarea>
+    <input type="button" value="Reset">
+            <input type="submit" value="Send">
+            </form>
+    </div>
+    </li>
+    </ul>
+    </nav>
+        <!--Menu HTML Code-->
+
+    </div>
+    </div>
+
+        <!--For Demo Only-->
+    <div class="wrapper">
+
+            <h1 class="headertlt">Select Color </h1>
+    <div class="colorlink clearfix">
+            <a class="buttoncolor gry" href="#">Gry</a>
+    <a class="buttoncolor blue" href="#">Blue</a>
+    <a class="buttoncolor green" href="#">Green</a>
+    <a class="buttoncolor red" href="#">Red</a>
+    <a class="buttoncolor orange" href="#">Orange</a>
+    <a class="buttoncolor yellow" href="#">Yellow</a>
+    <a class="buttoncolor purple" href="#">Purple</a>
+    <a class="buttoncolor pink" href="#">Pink</a>
+    </div>
+
+
+
+
+    <h1 class="headertlt">Select Gradient </h1>
+    <div class="colorlink clearfix">
+            <a class="buttoncolor gry-grdt" href="#">Gry</a>
+    <a class="buttoncolor blue-grdt" href="#">Blue</a>
+    <a class="buttoncolor green-grdt" href="#">Green</a>
+    <a class="buttoncolor red-grdt" href="#">Red</a>
+    <a class="buttoncolor orange-grdt" href="#">Orange</a>
+    <a class="buttoncolor yellow-grdt" href="#">Yellow</a>
+    <a class="buttoncolor purple-grdt" href="#">Purple</a>
+    <a class="buttoncolor pink-grdt" href="#">Pink</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+        <!--For Demo Only-->
+
+    </div>
+    </body>
+    </html>
