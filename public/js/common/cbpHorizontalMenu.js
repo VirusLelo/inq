@@ -18,7 +18,7 @@ var cbpHorizontalMenu = (function() {
 
 	function init() {
 		$menuItems.on( 'click', open );
-		$listItems.on( 'click', function( event ) { event.stopPropagation(); } );
+		//$listItems.on( 'click', function( event ) { event.stopPropagation(); } );
 
 	}
 

@@ -1,61 +1,34 @@
 <nav id="cbp-hrmenu" class="cbp-hrmenu">
     <ul>
         <li>
-            <a href="#">RECHARGE</a>
+            <a href="#">PAY BILLS & RECHARGE</a>
             <div class="cbp-hrsub">
-                <h4>RECHARGE</h4>
+                <h4>PAY BILLS & RECHARGE</h4><br/>
                 <div class="cbp-hrsub-inner">
                     <div>
+                        <h4 class="text-left">Recharge</h4><br/>
                         <ul>
-                            <li><a href="#"><img src="images/Mobile-Marketing-icon.png"/></a><div class="text-center">Mobile</div></li>
+                            <li><a href="#" class=""><img src="images/Mobile-Device-icon.png"/>Mobile</a></li>
+
+                            <li><a href="#"><img src="images/tv.png"/>DTH</a></li>
+
+                            <li><a href="#"><img src="images/USB-Flash-Card-With-Card-Reader-icon.png"/>Data Card</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-left">Bill Payments</h4><br/>
+                        <ul>
+                            <li><a href="#"><img src="images/Phone-icon.png"/>Mobile</a></li>
+
+                            <li><a href="#"><img src="images/phone-icon.png"/>Landline</a></li>
+
+                            <li><a href="#"><img src="images/Box-29-Electricity-icon.png"/>Electricity</a></li>
+                            <li><a href="#"><img src="images/gas-tube-icon.png"/>Gas</a></li>
+                            <li><a href="#"><img src="images/Return-Policy-icon.png"/>Insurance</a></li>
                         </ul>
                     </div>
 
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/hotel-icon.png"/></a>Hotel</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/doctor-man-icon.png"/></a>Doctor</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/Travel-Airplane-icon.png"/></a>Aeroplane</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="images/tank-wagon-icon.png"/></a>Train</li>
-                        </ul>
-                    </div>
+
 
 
                 </div><!-- /cbp-hrsub-inner -->
@@ -68,7 +41,7 @@
                 <div class="cbp-hrsub-inner">
                     <div>
                         <ul>
-                            <li><a href="#"><img src="images/car-icon.png"/></a><div class="text-center">Taxi</div></li>
+                            <li><a href="#"><img src="images/car-icon.png"/></a><div>Taxi</div></li>
                         </ul>
                     </div>
 
@@ -694,15 +667,15 @@
         <div class="row" style="padding-top:5px;padding-bottom:10px;">
             <div class="col-md-12 text-center">
                 <form class="form-inline" ng-submit="getResult(newQuery)" >
-                    <div class="form-group" mass-autocomplete>
+                    <div class="form-group form-group-xs" mass-autocomplete >
                         <label class="sr-only">Location</label>
-                        <input type="text" ng-model="newQuery.key" placeholder="Enter Search Text" typeahead="address for address in getAutocompleteSearchKey($viewValue)" typeahead-loading="loadingLocations" class="form-control">
+                        <input type="text" ng-model="newQuery.key" placeholder="Enter Search Text" typeahead="address for address in getAutocompleteSearchKey($viewValue)" typeahead-loading="loadingLocations" class="form-control input-sm">
                     </div>
-                    <div class="form-group" mass-autocomplete>
+                    <div class="form-group form-group-xs" mass-autocomplete>
                         <label class="sr-only">Location</label>
-                        <input type="text" ng-model="newQuery.location" placeholder="Search Location" typeahead="address for address in getAutocompleteLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
+                        <input type="text" ng-model="newQuery.location" placeholder="Search Location" typeahead="address for address in getAutocompleteLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control input-sm">
                     </div>
-                    <button type="submit" class="btn btn-primary">Find</button>
+                    <button type="submit" class="btn btn-primary btn-sm">Find</button>
                 </form>
             </div>
         </div>

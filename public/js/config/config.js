@@ -45,4 +45,9 @@ angular.module('inquiry').config(function($stateProvider, $urlRouterProvider){
             controller:'BustaxisCtrl',
             templateUrl:'templates/bustaxis/bustaxis.html'
         })
+        .state("mobilepre",{
+            url:'/mobilepre',
+            controller:'BustaxisCtrl',
+            templateUrl:'templates/bustaxis/bustaxis.html'
+        })
 })

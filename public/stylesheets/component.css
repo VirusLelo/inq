@@ -16,15 +16,11 @@
 	width: 100%;
 	max-width: 70em;
 	margin: 0 auto;
-	padding: 0 1.875em;
+	padding-right:0px;
+    padding-left:1px;
 
 }
-.cbp-hrsub-inner li {
-    font-weight:700;
-    font-size:15px;
-    color:white;
-    font-family: serif;
-}
+
 
 .cbp-hrmenu > ul > li {
 	display: inline-block;
@@ -71,7 +67,7 @@
 }
 
 .cbp-hrmenu .cbp-hrsub-inner > div {
-	width: 10%;
+	width: 25%;
 	float: left;
 	padding: 0 2em 0;
 }
@@ -155,9 +151,26 @@
 }
 
 .cbp-hrsub > h4 {
-   font-family:serif;
+    font-family:serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 15px;
 }
+
+.cbp-hrsub-inner h4{
+    font-weight:700;
+    font-family: serif;
+    color:yellow;
+   font-size:15px;
+    font-stretch: expanded;
+}
+.cbp-hrsub-inner > div > ul>li >a  {
+    font-weight:700;
+    font-size:12px;
+    color:white;
+    font-family: serif;
+    outline: none;
+    text-decoration: none;
+}
+
 
 
